@@ -15,5 +15,10 @@ dist/
 screenshots/*.png
 screenshots/*.json
 *.mp4
+!菇林弹丸-宣传片.mp4
+!shroom-shot-trailer.mp4
+public/trailer/raw/
+public/trailer/stills/
+public/trailer/build/
 .vscode/
 .idea/
