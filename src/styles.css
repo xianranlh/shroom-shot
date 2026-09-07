@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #1a1424;
+  --color-surface: #2a2233;
+  --color-fg: #f3ebe0;
+  --color-muted: #b5a394;
+  --color-primary: #c45c4a;
+  --color-moss: #6b8f5a;
+  --color-gold: #e8c070;
+  --color-border: #43384a;
+  --color-bloom: #e8a0b4;
+  --color-umbra: #6ec8d4;
+  --font-sans: "Noto Sans SC", "Segoe UI", system-ui, sans-serif;
+  --font-display: "ZCOOL XiaoWei", "Noto Serif SC", serif;
+  --radius-lg: 1rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body,
+  #app {
+    height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
